@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  color: #000;
+  background: #fff;
+}
+nav {
+  position: fixed;
+  background: none;
+  width: 100%;
+  padding: 30px 0;
+  z-index: 12;
+}
+nav .menu {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  
+}
+.menu ul {
+  display: inline-flex;
+}
+.menu ul  {
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul:first-child {
+  margin-left: 0px;
+}
+.menu ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul a:hover {
+  background: #fff;
+  color: black;
+}
+.img {
+  background: url("img.jpg") no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns {
+  margin-top: 20px;
+}
+.center .btns button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child {
+  color: white;
+  background: none;
+}
+.btns button:first-child:hover {
+  color: black;
+  background: white;
+}
+.center .btns button:last-child {
+  color: white;
+  background: none;
+}
+.btns button:last-child:hover{
+  color: black;
+  background: white;
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Travel X</a>
+      </div>
+      <ul>
+        <a href="index.html">Home</a>
+        <!--<div class="content" id="Home-content">This is home page It appear when the link is hover </div>-->
+        <a href="about.html">About</a>
+        <!--<div class="content" id="About-content">This is about page It appear when the link is hover </div>-->
+        <a href="services.html">Servise</a>
+        <!--<div class="content" id="Service-content">This is Service page It appear when the link is hover</div>-->
+        <a href="contact.html">Contact</a>
+        <!--<div class="content" id="Contact-content">This is Contact page It appear when the link is hover</div>-->
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Welcome To</div>
+    <div class="sub_title">International Travel Agency</div>
+    <div class="btns">
+      <a href="booktrip.html"><button>Book Trip</button></a>
+      <!--<button>Book Trip</button>-->
+      <a href="bestoffer.html"><button>Best Offer</button></a>
+      <!--<button>Best Offer</button>-->
+    </div>
+  </div>
+</body>
+</html>
